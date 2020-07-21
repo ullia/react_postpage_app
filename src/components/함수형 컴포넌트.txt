@@ -1,0 +1,12 @@
+함수형 컴포넌트
+
+- state를 가지지 않음
+- life cycle 메소드가 필요하지않음
+- 컴포넌트의 로직을 바깥으로 옮기므로, 이후 테스팅하기 편함
+- 함수형 컴포넌트는 this에 접근하는것이 불가능
+- life cycle api들을 사용하는것이 불가능
+- 오직 전달받는 props 에만 의존함
+
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
